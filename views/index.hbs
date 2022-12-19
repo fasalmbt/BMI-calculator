@@ -1,0 +1,35 @@
+<center>
+    <h1>{{title}}</h1>
+    <h4 style="font-style: italic;">
+        (Body positivity is nice, but being unhealthy is not positive)
+    </h4>
+</center>
+<div class="card">
+    <div class="card-body">
+        <div class="grid text-center">
+            <div class="g-col-4 g-start-6">
+                <br/>
+                <form action="/" method="post">
+                    <div class="mb-3 md-6">
+                        <input type="number" name="weight" id="id_weight" placeholder="Enter weight in KG" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" name="height" id="id_height" placeholder="Enter height in CM" />
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" name="calc">
+                            Calculate
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<center>
+    {{#if result}}
+    <h5>Your BMI is : {{result}}</h5>
+    {{/if}}
+    <h5>{{message}}</h5>
+</center>
